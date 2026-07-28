@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,1338 +11,2201 @@
 <style>
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 body {
-    background: #ffffff;
-    color: #111111;
-    overflow-x: hidden;
+    background:#ffffff;
+    color:#111;
+    overflow-x:hidden;
 }
+
+
+/* HEADER */
 
 header {
-    width: 100%;
-    min-height: 80px;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 7%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid #eeeeee;
-    box-shadow: 0 3px 18px rgba(0,0,0,0.08);
+
+    width:100%;
+    min-height:90px;
+    background:#fff;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:15px 7%;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    border-bottom:1px solid #eee;
+
+    box-shadow:
+    0 5px 25px rgba(0,0,0,.08);
+
 }
+
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
 }
+
 
 .logo-mark {
-    width: 54px;
-    height: 54px;
-    border-radius: 12px;
-    background: #00d084;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    flex-shrink: 0;
+
+    width:78px;
+    height:78px;
+
+    border-radius:20px;
+
+    background:#00d084;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.18);
+
 }
+
 
 .logo-mark img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+
+    padding:5px;
+
 }
+
+
 
 .logo-text h1 {
-    font-size: 20px;
-    font-weight: 900;
+
+    font-size:24px;
+    font-weight:900;
+
 }
+
 
 .logo-text p {
-    font-size: 11px;
-    color: #777777;
-    margin-top: 3px;
+
+    font-size:12px;
+    color:#777;
+
+    margin-top:4px;
+
 }
+
+
 
 nav {
-    display: flex;
-    align-items: center;
-    gap: 24px;
+
+    display:flex;
+    align-items:center;
+    gap:25px;
+
 }
+
 
 nav a {
-    text-decoration: none;
-    color: #222222;
-    font-size: 14px;
-    font-weight: bold;
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-size:14px;
+
+    font-weight:bold;
+
 }
+
 
 nav a:hover {
-    color: #00a866;
+
+    color:#00a866;
+
 }
+
+
 
 .nav-btn {
-    background: #00d084;
-    padding: 13px 20px;
-    border-radius: 7px;
-    color: #111111 !important;
+
+    background:#00d084;
+
+    padding:14px 22px;
+
+    border-radius:8px;
+
+    color:#111!important;
+
 }
+
+
+
+/* HERO */
+
 
 .hero {
-    min-height: 590px;
-    display: flex;
-    align-items: center;
-    padding: 80px 7%;
-    background:
-        linear-gradient(
-            90deg,
-            rgba(255,255,255,0.98),
-            rgba(255,255,255,0.93),
-            rgba(255,255,255,0.75)
-        ),
-        url("https://th.bing.com/th/id/OIP.mAjJkFZv8BBUx1JuaIq8VAHaEO?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3");
 
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 500px;
+    min-height:620px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:80px 7%;
+
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    rgba(255,255,255,.98),
+
+    rgba(255,255,255,.90),
+
+    rgba(255,255,255,.55)
+
+    ),
+
+    url("https://th.bing.com/th/id/R.e9854cc315d1cc41e7ead684016b6260?rik=8JSV1SR2g%2b8yVw&riu=http%3a%2f%2fcreditavel.com%2fwp-content%2fuploads%2f2023%2f08%2femprestimo-simplic-1024x576.jpg&ehk=%2bLYDQ5BIMRvXhib2rW2Ty4yfRsn4QIOq5d3HPzbkhyk%3d&risl=&pid=ImgRaw&r=0");
+
+    background-repeat:no-repeat;
+
+    background-position:right center;
+
+    background-size:650px;
+
 }
+
+
 
 .hero-content {
-    max-width: 650px;
+
+    max-width:650px;
+
 }
+
+
 
 .tag {
-    display: inline-block;
-    background: #00d084;
-    color: #111111;
-    padding: 9px 16px;
-    border-radius: 5px;
-    font-size: 12px;
-    font-weight: 900;
-    margin-bottom: 22px;
+
+    display:inline-block;
+
+    background:#00d084;
+
+    color:#111;
+
+    padding:10px 18px;
+
+    border-radius:6px;
+
+    font-size:12px;
+
+    font-weight:900;
+
+    margin-bottom:22px;
+
 }
+
+
 
 .hero h2 {
-    font-size: 52px;
-    line-height: 1.08;
-    margin-bottom: 22px;
+
+    font-size:54px;
+
+    line-height:1.08;
+
+    margin-bottom:22px;
+
 }
+
+
 
 .hero h2 span {
-    color: #00a866;
+
+    color:#00a866;
+
 }
+
+
 
 .hero p {
-    font-size: 18px;
-    color: #555555;
-    line-height: 1.7;
-    margin-bottom: 30px;
+
+    font-size:18px;
+
+    color:#555;
+
+    line-height:1.7;
+
+    margin-bottom:30px;
+
 }
+
+
 
 .buttons {
-    display: flex;
-    gap: 14px;
-    flex-wrap: wrap;
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
 }
+
+
 
 .btn {
-    display: inline-block;
-    padding: 16px 27px;
-    border-radius: 7px;
-    text-decoration: none;
-    font-weight: 900;
-    transition: 0.3s;
+
+    display:inline-block;
+
+    padding:16px 28px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:900;
+
+    transition:.3s;
+
 }
+
+
 
 .btn-green {
-    background: #00d084;
-    color: #111111;
+
+    background:#00d084;
+
+    color:#111;
+
 }
 
-.btn-green:hover {
-    background: #111111;
-    color: #00d084;
-}
+
 
 .btn-black {
-    background: #111111;
-    color: #ffffff;
+
+    background:#111;
+
+    color:#fff;
+
 }
+
+
+.btn-green:hover {
+
+    background:#111;
+
+    color:#00d084;
+
+}
+
+
 
 .btn-black:hover {
-    background: #00d084;
-    color: #111111;
+
+    background:#00d084;
+
+    color:#111;
+
 }
+/* BARRA DE CONFIANÇA */
 
 .trust {
-    background: #111111;
-    color: #ffffff;
-    padding: 24px 7%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-    gap: 20px;
+
+    background:#111;
+
+    color:#fff;
+
+    padding:25px 7%;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    text-align:center;
+
+    gap:20px;
+
 }
+
 
 .trust strong {
-    color: #00d084;
-    font-size: 22px;
-    margin-right: 8px;
+
+    color:#00d084;
+
+    font-size:24px;
+
+    margin-right:8px;
+
 }
+
+
+
+/* SEÇÕES */
 
 .section {
-    padding: 85px 7%;
+
+    padding:90px 7%;
+
 }
+
+
 
 .title {
-    text-align: center;
-    margin-bottom: 50px;
+
+    text-align:center;
+
+    margin-bottom:50px;
+
 }
+
+
 
 .title h2 {
-    font-size: 36px;
-    margin-bottom: 12px;
+
+    font-size:38px;
+
+    margin-bottom:12px;
+
 }
+
+
 
 .title h2 span {
-    color: #00a866;
+
+    color:#00a866;
+
 }
+
+
 
 .title p {
-    color: #777777;
+
+    color:#777;
+
 }
+
+
+
+
+/* CARDS */
+
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
 }
+
+
 
 .card {
-    padding: 32px;
-    border: 1px solid #eeeeee;
-    border-radius: 13px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-    transition: 0.3s;
+
+    padding:35px;
+
+    border:1px solid #eee;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 12px 35px rgba(0,0,0,.07);
+
+    transition:.3s;
+
 }
+
+
 
 .card:hover {
-    transform: translateY(-7px);
-    border-color: #00d084;
+
+    transform:translateY(-8px);
+
+    border-color:#00d084;
+
 }
+
+
 
 .card-icon {
-    width: 56px;
-    height: 56px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #00d084;
-    border-radius: 10px;
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 20px;
+
+    width:60px;
+
+    height:60px;
+
+    background:#00d084;
+
+    border-radius:12px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:26px;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
 }
+
+
 
 .card h3 {
-    margin-bottom: 12px;
-    font-size: 20px;
+
+    font-size:21px;
+
+    margin-bottom:12px;
+
 }
+
+
 
 .card p {
-    color: #666666;
-    line-height: 1.6;
+
+    color:#666;
+
+    line-height:1.6;
+
 }
+
+
+
+
+
+/* SIMULADOR */
+
 
 .simulation {
-    background: #111111;
-    padding: 90px 7%;
+
+    background:#111;
+
+    padding:90px 7%;
+
 }
+
+
 
 .simulation-container {
-    max-width: 1100px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1.1fr;
-    gap: 60px;
-    align-items: center;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1.1fr;
+
+    gap:60px;
+
+    align-items:center;
+
 }
+
+
 
 .simulation-info {
-    color: #ffffff;
+
+    color:#fff;
+
 }
+
+
 
 .simulation-info h2 {
-    font-size: 42px;
-    margin-bottom: 20px;
+
+    font-size:44px;
+
+    margin-bottom:20px;
+
 }
+
+
 
 .simulation-info h2 span {
-    color: #00d084;
+
+    color:#00d084;
+
 }
+
+
 
 .simulation-info p {
-    color: #cccccc;
-    line-height: 1.7;
-    margin-bottom: 25px;
+
+    color:#ccc;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
 }
+
+
 
 .simulation-info ul {
-    list-style: none;
+
+    list-style:none;
+
 }
+
+
 
 .simulation-info li {
-    margin-bottom: 15px;
+
+    margin-bottom:15px;
+
 }
+
+
 
 .simulation-info li::before {
-    content: "✓";
-    color: #00d084;
-    font-weight: bold;
-    margin-right: 10px;
+
+    content:"✓";
+
+    color:#00d084;
+
+    font-weight:bold;
+
+    margin-right:10px;
+
 }
+
+
+
+
 
 .simulator {
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 32px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:18px;
+
+    box-shadow:
+
+    0 20px 50px rgba(0,0,0,.35);
+
 }
+
+
 
 .simulator h3 {
-    font-size: 25px;
-    margin-bottom: 8px;
+
+    font-size:26px;
+
+    margin-bottom:8px;
+
 }
+
+
 
 .subtitle {
-    color: #777777;
-    font-size: 14px;
-    margin-bottom: 25px;
+
+    color:#777;
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
 }
+
+
+
 
 .value-box {
-    background: #111111;
-    border-radius: 10px;
-    padding: 23px;
-    text-align: center;
+
+    background:#111;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    text-align:center;
+
 }
+
+
 
 .value-label {
-    color: #aaaaaa;
-    font-size: 12px;
-    margin-bottom: 7px;
+
+    color:#aaa;
+
+    font-size:12px;
+
+    margin-bottom:8px;
+
 }
+
+
 
 .value {
-    color: #00d084;
-    font-size: 38px;
-    font-weight: 900;
+
+    color:#00d084;
+
+    font-size:40px;
+
+    font-weight:900;
+
 }
+
+
 
 input[type="range"] {
-    width: 100%;
-    margin: 24px 0 10px;
-    accent-color: #00d084;
-    cursor: pointer;
+
+    width:100%;
+
+    margin:25px 0 10px;
+
+    accent-color:#00d084;
+
 }
+
+
 
 .range-labels {
-    display: flex;
-    justify-content: space-between;
-    color: #777777;
-    font-size: 12px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    color:#777;
+
+    font-size:12px;
+
 }
+
+
+
 
 .amount-controls {
-    display: flex;
-    gap: 10px;
-    margin: 22px 0;
+
+    display:flex;
+
+    gap:10px;
+
+    margin:22px 0;
+
 }
+
+
 
 .amount-btn {
-    width: 45px;
-    height: 43px;
-    border: 0;
-    border-radius: 6px;
-    background: #00d084;
-    color: #111111;
-    font-size: 22px;
-    font-weight: bold;
-    cursor: pointer;
+
+    width:45px;
+
+    height:45px;
+
+    border:0;
+
+    border-radius:7px;
+
+    background:#00d084;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
 }
+
+
 
 .amount-input {
-    flex: 1;
-    min-width: 0;
-    border: 1px solid #dddddd;
-    border-radius: 6px;
-    text-align: center;
-    font-size: 17px;
-    font-weight: bold;
+
+    flex:1;
+
+    border:1px solid #ddd;
+
+    border-radius:7px;
+
+    text-align:center;
+
+    font-weight:bold;
+
+    font-size:17px;
+
 }
+
+
 
 label {
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 8px;
+
+    display:block;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+    margin-bottom:8px;
+
 }
+
+
 
 select {
-    width: 100%;
-    padding: 14px;
-    border: 1px solid #dddddd;
-    border-radius: 6px;
-    margin-bottom: 20px;
-    font-size: 15px;
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ddd;
+
+    border-radius:7px;
+
+    margin-bottom:20px;
+
 }
+
+
 
 .simulate-button {
-    width: 100%;
-    padding: 16px;
-    border: 0;
-    border-radius: 7px;
-    background: #00d084;
-    color: #111111;
-    font-weight: 900;
-    font-size: 16px;
-    cursor: pointer;
+
+    width:100%;
+
+    padding:17px;
+
+    border:0;
+
+    border-radius:8px;
+
+    background:#00d084;
+
+    color:#111;
+
+    font-weight:900;
+
+    cursor:pointer;
+
+    font-size:16px;
+
 }
+
+
 
 .result {
-    background: #f5f5f5;
-    border-left: 5px solid #00d084;
-    border-radius: 8px;
-    padding: 20px;
-    margin-top: 20px;
+
+    background:#f5f5f5;
+
+    border-left:5px solid #00d084;
+
+    padding:20px;
+
+    border-radius:8px;
+
+    margin-top:20px;
+
 }
+
+
 
 .result small {
-    color: #777777;
+
+    color:#777;
+
 }
+
+
 
 .result-value {
-    font-size: 28px;
-    font-weight: 900;
-    margin-top: 6px;
+
+    font-size:30px;
+
+    font-weight:900;
+
+    margin-top:8px;
+
 }
+
+
 
 .disclaimer {
-    color: #888888;
-    font-size: 11px;
-    line-height: 1.5;
-    margin-top: 18px;
-}
+
+    color:#888;
+
+    font-size:11px;
+
+    line-height:1.5;
+
+    margin-top:18px;
+
+}/* FORMULÁRIO */
+
 
 .form-section {
-    padding: 85px 7%;
-    background: #f7f7f7;
+
+    padding:90px 7%;
+
+    background:#f7f7f7;
+
 }
+
+
 
 .form-box {
-    max-width: 850px;
-    margin: auto;
-    background: #ffffff;
-    padding: 35px;
-    border-radius: 16px;
-    box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+
+    max-width:850px;
+
+    margin:auto;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.08);
+
 }
+
+
 
 .form-box h2 {
-    text-align: center;
-    margin-bottom: 10px;
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+    font-size:32px;
+
 }
+
+
 
 .form-box > p {
-    text-align: center;
-    color: #777777;
-    margin-bottom: 30px;
+
+    text-align:center;
+
+    color:#777;
+
+    margin-bottom:30px;
+
 }
+
+
 
 .form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
 }
+
+
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+
+    display:flex;
+
+    flex-direction:column;
+
 }
 
+
+
 .form-group.full {
-    grid-column: 1 / -1;
+
+    grid-column:1/-1;
+
 }
+
+
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-    width: 100%;
-    padding: 14px;
-    border: 1px solid #dddddd;
-    border-radius: 7px;
-    font-size: 15px;
-    outline: none;
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    outline:none;
+
 }
+
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+    border-color:#00d084;
+
+}
+
+
 
 .form-group textarea {
-    min-height: 110px;
-    resize: vertical;
+
+    min-height:120px;
+
+    resize:vertical;
+
 }
+
+
 
 .form-submit {
-    width: 100%;
-    margin-top: 22px;
-    padding: 16px;
-    border: 0;
-    border-radius: 7px;
-    background: #00d084;
-    color: #111111;
-    font-size: 16px;
-    font-weight: 900;
-    cursor: pointer;
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:17px;
+
+    border:0;
+
+    border-radius:8px;
+
+    background:#00d084;
+
+    color:#111;
+
+    font-weight:900;
+
+    font-size:16px;
+
+    cursor:pointer;
+
 }
+
+
+
+.form-submit:hover {
+
+    background:#111;
+
+    color:#00d084;
+
+}
+
+
+
+
+
+/* CTA FINAL */
+
 
 .cta {
-    background: #00d084;
-    text-align: center;
-    padding: 70px 7%;
+
+    background:#00d084;
+
+    text-align:center;
+
+    padding:75px 7%;
+
 }
+
+
 
 .cta h2 {
-    font-size: 36px;
-    margin-bottom: 15px;
+
+    font-size:38px;
+
+    margin-bottom:15px;
+
 }
+
+
 
 .cta p {
-    margin-bottom: 25px;
+
+    margin-bottom:25px;
+
 }
+
+
 
 .cta a {
-    display: inline-block;
-    background: #111111;
-    color: #ffffff;
-    padding: 16px 28px;
-    border-radius: 7px;
-    text-decoration: none;
-    font-weight: bold;
+
+    display:inline-block;
+
+    background:#111;
+
+    color:#fff;
+
+    padding:17px 30px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
 }
+
+
+
+
+
+/* FOOTER */
+
 
 footer {
-    background: #111111;
-    color: #ffffff;
-    padding: 45px 7% 20px;
+
+    background:#111;
+
+    color:#fff;
+
+    padding:50px 7% 25px;
+
 }
+
+
 
 .footer-content {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 35px;
+
+    display:flex;
+
+    justify-content:center;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
 }
+
+
 
 .footer-brand p {
-    color: #999999;
-    line-height: 1.6;
-    margin-top: 18px;
+
+    color:#999;
+
+    line-height:1.6;
+
+    margin-top:20px;
+
 }
+
+
 
 .copyright {
-    border-top: 1px solid #333333;
-    padding-top: 20px;
-    text-align: center;
-    color: #777777;
-    font-size: 12px;
-}
 
-@media (max-width: 850px) {
+    border-top:1px solid #333;
 
-    header {
-        position: relative;
-        padding: 14px 5%;
-        flex-direction: column;
-        gap: 16px;
-    }
+    padding-top:20px;
 
-    .logo {
-        width: 100%;
-        justify-content: center;
-    }
+    text-align:center;
 
-    .logo-mark {
-        width: 50px;
-        height: 50px;
-    }
+    color:#777;
 
-    .logo-text h1 {
-        font-size: 17px;
-    }
-
-    nav {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-    }
-
-    nav a {
-        text-align: center;
-        padding: 10px 5px;
-        font-size: 12px;
-    }
-
-    .nav-btn {
-        grid-column: 1 / -1;
-    }
-
-    .hero {
-        min-height: auto;
-        padding: 55px 5% 65px;
-        text-align: center;
-        background-position: center;
-        background-size: 300px;
-    }
-
-    .hero h2 {
-        font-size: 34px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .buttons {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    .trust {
-        grid-template-columns: 1fr;
-        padding: 25px 5%;
-    }
-
-    .section {
-        padding: 60px 5%;
-    }
-
-    .title h2 {
-        font-size: 29px;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .simulation {
-        padding: 60px 5%;
-    }
-
-    .simulation-container {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .simulation-info {
-        text-align: center;
-    }
-
-    .simulation-info h2 {
-        font-size: 34px;
-    }
-
-    .simulation-info ul {
-        text-align: left;
-        max-width: 290px;
-        margin: auto;
-    }
-
-    .simulator {
-        padding: 22px;
-    }
-
-    .value {
-        font-size: 32px;
-    }
-
-    .form-section {
-        padding: 60px 5%;
-    }
-
-    .form-box {
-        padding: 22px 18px;
-    }
-
-    .form-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .form-group.full {
-        grid-column: auto;
-    }
-
-    .cta {
-        padding: 55px 5%;
-    }
-
-    .cta h2 {
-        font-size: 29px;
-    }
-
-    footer {
-        padding: 40px 5% 20px;
-    }
+    font-size:12px;
 
 }
 
-</style>
+
+
+
+
+/* RESPONSIVO MOBILE */
+
+
+@media(max-width:850px){
+
+
+header {
+
+    position:relative;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    padding:15px 5%;
+
+}
+
+
+
+.logo {
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+
+
+.logo-mark {
+
+    width:60px;
+
+    height:60px;
+
+}
+
+
+
+.logo-text h1 {
+
+    font-size:19px;
+
+}
+
+
+
+nav {
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:8px;
+
+}
+
+
+
+nav a {
+
+    text-align:center;
+
+    padding:10px;
+
+    font-size:12px;
+
+}
+
+
+
+.nav-btn {
+
+    grid-column:1/-1;
+
+}
+
+
+
+.hero {
+
+    padding:55px 5%;
+
+    text-align:center;
+
+    background-position:center;
+
+    background-size:350px;
+
+}
+
+
+
+.hero h2 {
+
+    font-size:35px;
+
+}
+
+
+
+.hero p {
+
+    font-size:16px;
+
+}
+
+
+
+.buttons {
+
+    flex-direction:column;
+
+}
+
+
+
+.btn {
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+
+
+.trust {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.section {
+
+    padding:60px 5%;
+
+}
+
+
+
+.cards {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.simulation {
+
+    padding:60px 5%;
+
+}
+
+
+
+.simulation-container {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.simulation-info {
+
+    text-align:center;
+
+}
+
+
+
+.form-section {
+
+    padding:60px 5%;
+
+}
+
+
+
+.form-box {
+
+    padding:25px 18px;
+
+}
+
+
+
+.form-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.form-group.full {
+
+    grid-column:auto;
+
+}
+
+
+
+.cta {
+
+    padding:60px 5%;
+
+}
+
+
+
+.cta h2 {
+
+    font-size:30px;
+
+}
+
+
+
+footer {
+
+    padding:40px 5%;
+
+}
+
+
+}</style>
+
 </head>
 
 <body>
 
+
 <header>
 
-    <div class="logo">
+<div class="logo">
 
-        <div class="logo-mark">
+<div class="logo-mark">
 
-            <img
-                src="https://creditavel.org/wp-content/uploads/2022/09/Emprestimo-Simplic-2-1.webp"
-                alt="Logo da empresa"
-            >
+<img 
+src="COLE_SEU_LOGO_AQUI"
+alt="Logo Simplic">
 
-        </div>
+</div>
 
-        <div class="logo-text">
 
-            <h1>Simplic</h1>
+<div class="logo-text">
 
-            <p>Dinheiro na conta em 24H</p>
+<h1>Simplic</h1>
 
-        </div>
+<p>Dinheiro na conta em 24H</p>
 
-    </div>
+</div>
 
-    <nav>
 
-        <a href="#inicio">Início</a>
+</div>
 
-        <a href="#vantagens">Vantagens</a>
 
-        <a href="#simulacao">Simulação</a>
+<nav>
 
-        <a href="#solicitacao">Solicitação</a>
+<a href="#inicio">Início</a>
 
-        <a href="#simulacao" class="nav-btn">
-            Simular agora
-        </a>
+<a href="#vantagens">Vantagens</a>
 
-    </nav>
+<a href="#simulacao">Simulação</a>
+
+<a href="#solicitacao">Solicitação</a>
+
+
+<a href="#simulacao" class="nav-btn">
+Simular agora
+</a>
+
+
+</nav>
+
 
 </header>
 
+
+
+
 <section class="hero" id="inicio">
 
-    <div class="hero-content">
 
-        <div class="tag">
-            SOLUÇÕES FINANCEIRAS
-        </div>
+<div class="hero-content">
 
-        <h2>
-            O crédito que ajuda você a
-            <span>realizar seus planos.</span>
-        </h2>
 
-        <p>
-            Faça uma simulação de forma simples e veja uma estimativa
-            do valor das suas parcelas.
-        </p>
+<div class="tag">
+SOLUÇÕES FINANCEIRAS
+</div>
 
-        <div class="buttons">
 
-            <a href="#simulacao" class="btn btn-green">
-                SIMULAR AGORA
-            </a>
+<h2>
 
-            <a href="#vantagens" class="btn btn-black">
-                SAIBA MAIS
-            </a>
+O crédito que ajuda você a
 
-        </div>
+<span>
+realizar seus planos.
+</span>
 
-    </div>
+</h2>
+
+
+<p>
+
+Faça uma simulação simples e veja uma estimativa
+do valor das suas parcelas.
+
+</p>
+
+
+
+<div class="buttons">
+
+
+<a href="#simulacao" class="btn btn-green">
+
+SIMULAR AGORA
+
+</a>
+
+
+<a href="#vantagens" class="btn btn-black">
+
+SAIBA MAIS
+
+</a>
+
+
+</div>
+
+
+</div>
+
 
 </section>
+
+
+
 
 <section class="trust">
 
-    <div>
-        <strong>✓</strong>
-        Processo simples
-    </div>
 
-    <div>
-        <strong>✓</strong>
-        Atendimento profissional
-    </div>
+<div>
+<strong>✓</strong>
+Processo simples
+</div>
 
-    <div>
-        <strong>✓</strong>
-        Informações claras
-    </div>
+
+<div>
+<strong>✓</strong>
+Atendimento profissional
+</div>
+
+
+<div>
+<strong>✓</strong>
+Informações claras
+</div>
+
 
 </section>
+
+
+
 
 <section class="section" id="vantagens">
 
-    <div class="title">
 
-        <h2>
-            Uma experiência mais
-            <span>simples para você</span>
-        </h2>
+<div class="title">
 
-        <p>
-            Conheça algumas das nossas principais vantagens.
-        </p>
 
-    </div>
+<h2>
 
-    <div class="cards">
+Uma experiência mais
 
-        <div class="card">
+<span>
+simples para você
+</span>
 
-            <div class="card-icon">✓</div>
 
-            <h3>Processo simples</h3>
+</h2>
 
-            <p>
-                Faça sua simulação de forma rápida e organizada.
-            </p>
 
-        </div>
+<p>
+Conheça nossas principais vantagens.
+</p>
 
-        <div class="card">
 
-            <div class="card-icon">$</div>
+</div>
 
-            <h3>Valores personalizados</h3>
 
-            <p>
-                Escolha o valor desejado dentro da faixa disponível.
-            </p>
 
-        </div>
 
-        <div class="card">
+<div class="cards">
 
-            <div class="card-icon">★</div>
 
-            <h3>Atendimento profissional</h3>
+<div class="card">
 
-            <p>
-                Conte com informações claras durante todo o processo.
-            </p>
+<div class="card-icon">
+✓
+</div>
 
-        </div>
+<h3>
+Processo simples
+</h3>
 
-    </div>
+<p>
+Faça sua solicitação de forma rápida e organizada.
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<div class="card-icon">
+$
+</div>
+
+
+<h3>
+Valores personalizados
+</h3>
+
+
+<p>
+Escolha o valor desejado dentro da faixa disponível.
+</p>
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<div class="card-icon">
+★
+</div>
+
+
+<h3>
+Atendimento profissional
+</h3>
+
+
+<p>
+Informações claras durante todo o processo.
+</p>
+
+
+</div>
+
+
+
+</div>
+
 
 </section>
+
+
+
+
 
 <section class="simulation" id="simulacao">
 
-    <div class="simulation-container">
 
-        <div class="simulation-info">
+<div class="simulation-container">
 
-            <h2>
-                Faça sua
-                <span>simulação</span>
-            </h2>
 
-            <p>
-                Escolha um valor entre R$ 1.205 e R$ 5.500
-                e veja uma estimativa das parcelas.
-            </p>
+<div class="simulation-info">
 
-            <ul>
 
-                <li>Valor ajustável</li>
+<h2>
 
-                <li>Escolha das parcelas</li>
+Faça sua
 
-                <li>Resultado instantâneo</li>
+<span>
+simulação
+</span>
 
-                <li>Simulação fácil de usar</li>
 
-            </ul>
+</h2>
 
-        </div>
 
-        <div class="simulator">
+<p>
 
-            <h3>Simular empréstimo</h3>
+Escolha um valor entre R$ 1.205 e R$ 5.500
+e veja uma estimativa.
 
-            <p class="subtitle">
-                Escolha o valor desejado.
-            </p>
+</p>
 
-            <div class="value-box">
 
-                <div class="value-label">
-                    VALOR SELECIONADO
-                </div>
+<ul>
 
-                <div class="value" id="valueDisplay">
-                    R$ 1.205,00
-                </div>
+<li>Valor ajustável</li>
 
-            </div>
+<li>Escolha das parcelas</li>
 
-            <input
-                type="range"
-                id="rangeValue"
-                min="1205"
-                max="5500"
-                step="5"
-                value="1205"
-            >
+<li>Resultado rápido</li>
 
-            <div class="range-labels">
+<li>Simulação fácil</li>
 
-                <span>R$ 1.205</span>
+</ul>
 
-                <span>R$ 5.500</span>
 
-            </div>
+</div>
 
-            <div class="amount-controls">
 
-                <button
-                    class="amount-btn"
-                    onclick="alterarValor(-100)"
-                >
-                    −
-                </button>
 
-                <input
-                    class="amount-input"
-                    id="amountInput"
-                    value="R$ 1.205,00"
-                    readonly
-                >
 
-                <button
-                    class="amount-btn"
-                    onclick="alterarValor(100)"
-                >
-                    +
-                </button>
 
-            </div>
+<div class="simulator">
 
-            <label>
-                Quantidade de parcelas
-            </label>
 
-            <select id="parcelas">
+<h3>
+Simular empréstimo
+</h3>
 
-                <option value="6">
-                    6 parcelas
-                </option>
 
-                <option value="12" selected>
-                    12 parcelas
-                </option>
+<p class="subtitle">
+Escolha o valor desejado.
+</p>
 
-                <option value="18">
-                    18 parcelas
-                </option>
 
-                <option value="24">
-                    24 parcelas
-                </option>
 
-                <option value="36">
-                    36 parcelas
-                </option>
+<div class="value-box">
 
-            </select>
 
-            <button
-                class="simulate-button"
-                onclick="calcularSimulacao()"
-            >
-                SIMULAR AGORA
-            </button>
+<div class="value-label">
+VALOR SELECIONADO
+</div>
 
-            <div class="result">
 
-                <small>
-                    ESTIMATIVA DA PARCELA
-                </small>
+<div class="value" id="valueDisplay">
 
-                <div
-                    class="result-value"
-                    id="resultValue"
-                >
-                    R$ 0,00
-                </div>
+R$ 1.205,00
 
-            </div>
+</div>
 
-            <p class="disclaimer">
 
-                Esta simulação é apenas uma estimativa.
-                As condições finais dependem de análise e aprovação.
+</div>
 
-            </p>
 
-        </div>
 
-    </div>
+
+<input 
+type="range"
+id="rangeValue"
+min="1205"
+max="5500"
+step="5"
+value="1205">
+
+
+
+<div class="range-labels">
+
+<span>
+R$ 1.205
+</span>
+
+
+<span>
+R$ 5.500
+</span>
+
+
+</div>
+
+
+
+
+<div class="amount-controls">
+
+
+<button class="amount-btn" onclick="alterarValor(-100)">
+−
+</button>
+
+
+<input 
+class="amount-input"
+id="amountInput"
+value="R$ 1.205,00"
+readonly>
+
+
+<button class="amount-btn" onclick="alterarValor(100)">
++
+</button>
+
+
+</div>
+
+
+
+<label>
+Quantidade de parcelas
+</label>
+
+
+
+<select id="parcelas">
+
+
+<option value="6">
+6 parcelas
+</option>
+
+
+<option value="12" selected>
+12 parcelas
+</option>
+
+
+<option value="18">
+18 parcelas
+</option>
+
+
+<option value="24">
+24 parcelas
+</option>
+
+
+<option value="36">
+36 parcelas
+</option>
+
+
+</select>
+
+
+
+<button 
+class="simulate-button"
+onclick="calcularSimulacao()">
+
+SIMULAR AGORA
+
+</button>
+
+
+
+<div class="result">
+
+
+<small>
+ESTIMATIVA DA PARCELA
+</small>
+
+
+<div class="result-value" id="resultValue">
+
+R$ 0,00
+
+</div>
+
+
+</div>
+
+
+
+<p class="disclaimer">
+
+Esta simulação é apenas uma estimativa.
+
+As condições finais dependem de análise.
+
+</p>
+
+
+
+</div>
+
+
+</div>
+
 
 </section>
+
+
+
+
 
 <section class="form-section" id="solicitacao">
 
-    <div class="form-box">
 
-        <h2>
-            Solicitação de contato
-        </h2>
+<div class="form-box">
 
-        <p>
-            Preencha os dados abaixo para enviar sua solicitação.
-        </p>
 
-        <form
-            action="https://formsubmit.co/simplicred.online@gmail.com"
-            method="POST"
-        >
+<h2>
+Solicitação de contato
+</h2>
 
-            <input
-                type="hidden"
-                name="_subject"
-                value="Nova solicitação recebida"
-            >
 
-            <input
-                type="hidden"
-                name="_captcha"
-                value="false"
-            >
+<p>
+Preencha seus dados para receber atendimento.
+</p>
 
-            <input
-                type="hidden"
-                name="_template"
-                value="table"
-            >
 
-            <div class="form-grid">
 
-                <div class="form-group">
 
-                    <label>
-                        Nome completo
-                    </label>
+<form 
+action="https://formsubmit.co/simplicred.online@gmail.com"
+method="POST">
 
-                    <input
-                        type="text"
-                        name="Nome completo"
-                        required
-                    >
 
-                </div>
+<input 
+type="hidden"
+name="_subject"
+value="Nova solicitação Simplic">
 
-                <div class="form-group">
 
-                    <label>
-                        CPF
-                    </label>
+<input 
+type="hidden"
+name="_captcha"
+value="false">
 
-                    <input
-                        type="text"
-                        name="CPF"
-                        placeholder="000.000.000-00"
-                        required
-                    >
 
-                </div>
+<input 
+type="hidden"
+name="_template"
+value="table">
 
-                <div class="form-group">
 
-                    <label>
-                        Data de nascimento
-                    </label>
 
-                    <input
-                        type="date"
-                        name="Data de nascimento"
-                        required
-                    >
 
-                </div>
 
-                <div class="form-group">
+<div class="form-grid">
 
-                    <label>
-                        Telefone
-                    </label>
 
-                    <input
-                        type="tel"
-                        name="Telefone"
-                        required
-                    >
+<div class="form-group">
 
-                </div>
+<label>
+Nome completo
+</label>
 
-                <div class="form-group">
+<input 
+type="text"
+name="Nome"
+required>
 
-                    <label>
-                        E-mail
-                    </label>
+</div>
 
-                    <input
-                        type="email"
-                        name="E-mail"
-                        required
-                    >
 
-                </div>
 
-                <div class="form-group">
 
-                    <label>
-                        Valor desejado
-                    </label>
+<div class="form-group">
 
-                    <select name="Valor desejado">
+<label>
+CPF
+</label>
 
-                        <option>R$ 1.205</option>
+<input 
+type="text"
+name="CPF"
+required>
 
-                        <option>R$ 2.000</option>
+</div>
 
-                        <option>R$ 3.000</option>
 
-                        <option>R$ 4.000</option>
 
-                        <option>R$ 5.500</option>
 
-                    </select>
+<div class="form-group">
 
-                </div>
+<label>
+Telefone
+</label>
 
-                <div class="form-group full">
+<input 
+type="tel"
+name="Telefone"
+required>
 
-                    <label>
-                        Observações
-                    </label>
+</div>
 
-                    <textarea
-                        name="Observações"
-                        placeholder="Digite uma mensagem..."
-                    ></textarea>
 
-                </div>
 
-            </div>
 
-            <button
-                type="submit"
-                class="form-submit"
-            >
-                ENVIAR SOLICITAÇÃO
-            </button>
+<div class="form-group">
 
-        </form>
+<label>
+E-mail
+</label>
 
-    </div>
+<input 
+type="email"
+name="Email"
+required>
+
+</div>
+
+
+
+
+<div class="form-group full">
+
+<label>
+Observações
+</label>
+
+
+<textarea 
+name="Mensagem">
+</textarea>
+
+
+</div>
+
+
+
+</div>
+
+
+
+<button class="form-submit">
+
+ENVIAR SOLICITAÇÃO
+
+</button>
+
+
+
+</form>
+
+
+
+</div>
+
 
 </section>
+
+
+
+
 
 <section class="cta">
 
-    <h2>
-        Comece sua simulação agora
-    </h2>
 
-    <p>
-        Escolha o valor que deseja simular.
-    </p>
+<h2>
+Comece sua simulação agora
+</h2>
 
-    <a href="#solicitacao">
-        FAZER SOLICITAÇÃO
-    </a>
+
+<p>
+Escolha o valor desejado.
+</p>
+
+
+
+<a href="#solicitacao">
+
+FAZER SOLICITAÇÃO
+
+</a>
+
+
 
 </section>
 
+
+
+
+
 <footer>
 
-    <div class="footer-content">
 
-        <div class="footer-brand">
+<div class="footer-content">
 
-            <div class="logo">
 
-                <div class="logo-mark">
+<div class="footer-brand">
 
-                    <img
-                        src="https://multifinanca.com/wp-content/uploads/2022/05/simplic3.jpeg"
-                        alt="Logo da empresa"
-                    >
 
-                </div>
+<div class="logo">
 
-                <div class="logo-text">
 
-                    <h1>
-                        Simplic
-                    </h1>
+<div class="logo-mark">
 
-                    <p>
-                        Soluções financeiras para você
-                    </p>
 
-                </div>
+<img 
+src="https://www.idinheiro.com.br/wp-content/uploads/2020/07/simplic.jpg"
+alt="Logo Simplic">
 
-            </div>
 
-            <p>
-                Soluções financeiras com informações claras
-                e atendimento profissional.
-            </p>
+</div>
 
-        </div>
 
-    </div>
+<div class="logo-text">
 
-    <div class="copyright">
+<h1>
+Simplic
+</h1>
 
-        © 2026 Simplic.
-        Todos os direitos reservados.
 
-    </div>
+<p>
+Soluções financeiras para você
+</p>
+
+
+</div>
+
+
+</div>
+
+
+<p>
+Soluções financeiras com informações claras.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="copyright">
+
+© 2026 Simplic. Todos os direitos reservados.
+
+</div>
+
 
 </footer>
 
+
+
+
+
 <script>
 
-const range = document.getElementById("rangeValue");
 
-const valueDisplay = document.getElementById("valueDisplay");
+const range=document.getElementById("rangeValue");
 
-const amountInput = document.getElementById("amountInput");
+const valueDisplay=document.getElementById("valueDisplay");
 
-const parcelas = document.getElementById("parcelas");
+const amountInput=document.getElementById("amountInput");
 
-const resultValue = document.getElementById("resultValue");
+const parcelas=document.getElementById("parcelas");
 
-function moeda(valor) {
+const resultValue=document.getElementById("resultValue");
 
-    return valor.toLocaleString(
-        "pt-BR",
-        {
-            style: "currency",
-            currency: "BRL"
-        }
-    );
 
-}
 
-function atualizarValor(valor) {
+function moeda(valor){
 
-    if (valor < 1205) {
-        valor = 1205;
-    }
-
-    if (valor > 5500) {
-        valor = 5500;
-    }
-
-    range.value = valor;
-
-    valueDisplay.textContent = moeda(valor);
-
-    amountInput.value = moeda(valor);
-
-    calcularSimulacao();
+return valor.toLocaleString(
+"pt-BR",
+{
+style:"currency",
+currency:"BRL"
+});
 
 }
 
-function alterarValor(valor) {
 
-    const atual = parseInt(range.value);
 
-    atualizarValor(atual + valor);
+
+function atualizarValor(valor){
+
+
+if(valor<1205)
+valor=1205;
+
+
+if(valor>5500)
+valor=5500;
+
+
+
+range.value=valor;
+
+
+valueDisplay.textContent=moeda(valor);
+
+
+amountInput.value=moeda(valor);
+
+
+calcularSimulacao();
+
 
 }
+
+
+
+
+function alterarValor(valor){
+
+let atual=parseInt(range.value);
+
+atualizarValor(atual+valor);
+
+}
+
+
+
 
 range.addEventListener(
-    "input",
-    function() {
+"input",
+function(){
 
-        atualizarValor(
-            parseInt(this.value)
-        );
+atualizarValor(parseInt(this.value));
 
-    }
-);
+});
+
+
+
 
 parcelas.addEventListener(
-    "change",
-    calcularSimulacao
+"change",
+calcularSimulacao
 );
 
-function calcularSimulacao() {
 
-    const valor = parseFloat(range.value);
 
-    const numeroParcelas = parseInt(parcelas.value);
 
-    const taxa = 0.025;
+function calcularSimulacao(){
 
-    const valorFinal =
-        valor *
-        Math.pow(
-            1 + taxa,
-            numeroParcelas
-        );
 
-    const parcela =
-        valorFinal /
-        numeroParcelas;
+let valor=parseFloat(range.value);
 
-    resultValue.textContent =
-        moeda(parcela);
+let qtd=parseInt(parcelas.value);
+
+
+let taxa=0.025;
+
+
+let final=valor*Math.pow(
+1+taxa,
+qtd
+);
+
+
+
+let parcela=final/qtd;
+
+
+
+resultValue.textContent=
+moeda(parcela);
+
 
 }
+
+
+
 
 atualizarValor(1205);
 
+
+
 </script>
+
 
 </body>
 
